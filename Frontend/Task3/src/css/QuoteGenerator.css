@@ -1,0 +1,136 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(120deg, #fde6a6, #f7a600);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.magic-wrapper {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 14px;
+  width: 90%;
+  max-width: 640px;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.18);
+  text-align: center;
+  position:fixed;
+}
+
+.page-title {
+  font-size: 2rem;
+  margin-bottom: 1.3rem;
+}
+
+.line-card {
+  background: #fdfdfd;
+  border-left: 6px solid #f7a600;
+  padding: 1.2rem;
+  border-radius: 8px;
+  margin-bottom: 1.2rem;
+}
+
+.line-text {
+  font-size: 1.25rem;
+  font-style: italic;
+  margin-bottom: 0.6rem;
+}
+
+.line-author {
+  font-size: 0.95rem;
+  color: #555;
+  text-align: right;
+}
+
+.control-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.btn {
+  padding: 0.75rem 1.3rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.07);
+}
+
+.funky {
+  background: #f7a600;
+  color: #fff;
+}
+
+.outline {
+  border: 2px solid #f7a600;
+  background: transparent;
+  color: #f7a600;
+}
+
+.greenish {
+  background: #21c15e;
+  color: #fff;
+}
+
+.greenish:hover {
+  background: #199a4a;
+}
+
+.loading-ring {
+  border: 5px solid #eaeaea;
+  border-top: 5px solid #f7a600;
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  margin: auto;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.pop-msg {
+  position: fixed;
+  bottom: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #2dc36b;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
+}
+
+.offline-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffe6e6;
+  color: #d9534f;
+  border: 1px solid #d9534f;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  gap: 8px;
+}
+
+.offline-box input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #d9534f; /* For modern browsers */
+}
